@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex: 1, 1, auto;
+}
+
+:root {
+  --main: #333;
+  --main-rgb: 51, 51, 51;
+  color-scheme: light;
+}
+
+.purple {
+  background: #ad7fa8;
+}
+
+.blue {
+  background: #729fcf;
+}
+
+.green {
+  background: #73d216;
+}
+
+.orange {
+  background: #fcaf3e;
+}
+
+.yellow {
+  background: #fce94f;
+}
+
+.white {
+  background: #ddd;
+}
+
+.flex-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1200px;
+}
+
+h1 {
+  margin-top: 3vh;
+  margin-left: 40%;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: block;
+  border-bottom: 1px solid #f4f4f4;
+  font-family: DejaVu Sans Mono, Menlo, Lucida Console, monospace;
+  font-size: 15px;
+  display: block;
+  padding-bottom: 3px;
+  border: none;
+  width: 753px;
+  height: 30px;
+  background: #2d2d2d;
+  color: #ffffff;
+  margin-left: 18%;
+  margin-top: 10%;
+  padding: 10px;
+  padding-left: 0;
+  border-radius: 5px;
+}
+
+textarea:focus, input:focus
+{
+  outline: none;
+}
+
+.quote_item {
+  position: sticky;
+  color: #2d2d2d;
+  font-size: 25px;
+  margin-left: 18.1%;
+}
+
+.keyboard {
+  position: sticky;
+  font-size: 13px;
+  left: 0;
+  right: 0;
+  margin-left: 18%;
+  margin-top: 20%;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.line {
+  clear: left;
+}
+
+.key {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 37px;
+  font-size: 15px;
+  border: 2px solid #333;
+  margin: 1px;
+  padding: 5px;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.key14 {
+  width: 76px; 
+  font-size: 13px;
+  padding-left: 2px;
+}
+
+.key15 {
+  width: 76px;
+}
+
+.key29 {
+  width: 93px;
+}
+
+.key41 {
+  width: 85px;
+  text-align: right;
+}
+
+.key42 {
+  width: 114px;
+}
+
+.key53 {
+  width: 116px;
+  text-align: right;
+}
+
+.key54 {
+  margin-left: 210px;
+  width: 300px;
+  height: 50px;
+}
+
+.key55 {
+  font-size: 14px;
+  padding-left: 1px;
+}
+
+/* Dark */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #1C1B22;
+  }
+
+  hr {
+    border: solid 3px #2d2d2d;
+  }
+
+  .theme {
+    border: solid 3px #2d2d2d;
+  }
+
+  .quote_item {
+    color: #f4f4f4;
+  }
+
+  .key {
+    border: solid 2px #c7d0d4
+  }
+
+}
